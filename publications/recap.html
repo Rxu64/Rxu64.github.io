@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="/faviconw.ico">
   <title>ReCAP: Recursive Context-Aware Reasoning and Planning for Large Language Model Agents</title>
   <meta name="citation_title" content="ReCAP: Recursive Context-Aware Reasoning and Planning for Large Language Model Agents">
   <meta name="citation_author" content="Zhenyu Zhang">
@@ -53,7 +54,7 @@
     <h1>ReCAP: Recursive Context-Aware Reasoning and Planning for Large Language Model Agents</h1>
     <p class="authors">Zhenyu Zhang, Tianyi Chen, <strong>Weiran Xu</strong>, Alex Pentland, Jiaxin Pei</p>
     <p class="meta">arXiv:2510.23822</p>
-    <p><a href="https://arxiv.org/pdf/2510.23822">PDF</a> &middot; <a href="https://github.com/ReCAP-Stanford/ReCAP">Code</a></p>
+    <p><a href="https://arxiv.org/pdf/2510.23822.pdf">PDF</a> &middot; <a href="https://github.com/ReCAP-Stanford/ReCAP">Code</a></p>
     <h2>Abstract</h2>
     <p>Long-horizon tasks requiring multi-step reasoning and dynamic re-planning remain challenging for large language models (LLMs). Sequential prompting methods are prone to context drift, loss of goal information, and recurrent failure cycles, while hierarchical prompting methods often weaken cross-level continuity or incur substantial runtime overhead.</p>
     <p>We introduce ReCAP (Recursive Context-Aware Reasoning and Planning), a hierarchical framework with shared context for reasoning and planning in LLMs. ReCAP combines three key mechanisms: (i) plan-ahead decomposition, in which the model generates a full subtask list, executes the first item, and refines the remainder; (ii) structured re-injection of parent plans, maintaining consistent multi-level context during recursive return; and (iii) memory-efficient execution, bounding the active prompt so costs scale linearly with task depth.</p>
