@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ReCAP: Recursive Context-Aware Reasoning and Planning for Large Language Model Agents</title>
+  <meta name="citation_title" content="ReCAP: Recursive Context-Aware Reasoning and Planning for Large Language Model Agents">
+  <meta name="citation_author" content="Zhenyu Zhang">
+  <meta name="citation_author" content="Tianyi Chen">
+  <meta name="citation_author" content="Weiran Xu">
+  <meta name="citation_author" content="Alex Pentland">
+  <meta name="citation_author" content="Jiaxin Pei">
+  <meta name="citation_publication_date" content="2025/10/27">
+  <meta name="citation_technical_report_institution" content="arXiv">
+  <meta name="citation_technical_report_number" content="2510.23822">
+  <meta name="citation_online_date" content="2025/10/27">
+  <style>
+    body {
+      color: #3f454a;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.55;
+      margin: 0;
+      padding: 2rem 1rem 4rem;
+    }
+    main {
+      margin: 0 auto;
+      max-width: 48rem;
+    }
+    h1 {
+      font-size: 2rem;
+      line-height: 1.2;
+      margin: 0 0 1rem;
+    }
+    h2 {
+      font-size: 1.25rem;
+      margin: 2rem 0 0.5rem;
+    }
+    .authors {
+      font-size: 1.25rem;
+      margin: 0 0 0.75rem;
+    }
+    .meta {
+      margin: 0 0 1.25rem;
+    }
+    a {
+      color: #58adc3;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <p><a href="/">Weiran Xu</a></p>
+    <h1>ReCAP: Recursive Context-Aware Reasoning and Planning for Large Language Model Agents</h1>
+    <p class="authors">Zhenyu Zhang, Tianyi Chen, <strong>Weiran Xu</strong>, Alex Pentland, Jiaxin Pei</p>
+    <p class="meta">arXiv:2510.23822</p>
+    <p><a href="https://arxiv.org/pdf/2510.23822">PDF</a> &middot; <a href="https://github.com/ReCAP-Stanford/ReCAP">Code</a></p>
+    <h2>Abstract</h2>
+    <p>Long-horizon tasks requiring multi-step reasoning and dynamic re-planning remain challenging for large language models (LLMs). Sequential prompting methods are prone to context drift, loss of goal information, and recurrent failure cycles, while hierarchical prompting methods often weaken cross-level continuity or incur substantial runtime overhead.</p>
+    <p>We introduce ReCAP (Recursive Context-Aware Reasoning and Planning), a hierarchical framework with shared context for reasoning and planning in LLMs. ReCAP combines three key mechanisms: (i) plan-ahead decomposition, in which the model generates a full subtask list, executes the first item, and refines the remainder; (ii) structured re-injection of parent plans, maintaining consistent multi-level context during recursive return; and (iii) memory-efficient execution, bounding the active prompt so costs scale linearly with task depth.</p>
+    <p>Together these mechanisms align high-level goals with low-level actions, reduce redundant prompting, and preserve coherent context updates across recursion. Experiments demonstrate that ReCAP substantially improves subgoal alignment and success rates on various long-horizon reasoning benchmarks, achieving a 32% gain on synchronous Robotouille and a 29% improvement on asynchronous Robotouille under the strict pass@1 protocol.</p>
+  </main>
+</body>
+</html>
